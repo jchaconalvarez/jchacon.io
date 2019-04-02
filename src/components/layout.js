@@ -8,9 +8,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
 
-import Header from "./header"
 import "./layout.css"
+
+const Main = styled.main`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,17 +32,9 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <main
-        style={{
-          width: `100%`,
-          height: `100vh`,
-          display: `flex`,
-          justifyContent: `center`,
-          alignItems: `center`,
-          backgroundColor: `#CCC`
-        }}>
+      <Main>
         {children}
-      </main>
+      </Main>
     )}
   />
 )
