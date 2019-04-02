@@ -30,7 +30,8 @@ const Layout = ({ children }) => (
           height: `100vh`,
           display: `flex`,
           justifyContent: `center`,
-          alignItems: `center`
+          alignItems: `center`,
+          backgroundColor: `#CCC`
         }}>
         {children}
       </main>
