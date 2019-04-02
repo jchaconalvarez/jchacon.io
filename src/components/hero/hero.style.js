@@ -3,10 +3,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 66.66%;
-  height: 50vh;
+  min-height: 50vh;
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1rem;
   border: 1px solid black;
 `
@@ -18,9 +19,9 @@ export const Title = styled.h1`
   font-size: 1rem;
 `
 
-export const Redacted = styled.span`
-  background: #000;
-`
-
 export const Text = styled.p`
+  ${props => (
+    props.start && 'align-self: flex-start' ||
+    props.end && 'align-self: flex-end'
+  )};
 `
