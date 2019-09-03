@@ -1,4 +1,5 @@
 module.exports = {
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -17,7 +18,7 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    quotes: [2, 'backtick', 'avoid-escape'],
+    quotes: [2, 'single', 'avoid-escape'],
     semi: ['error', 'never'],
     indent: ['error', 2],
   },

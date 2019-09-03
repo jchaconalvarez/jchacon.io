@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `jchacon.io`,
-    description: `English philologist turned web developer. Tech nerd with a knack for problem solving.`,
-    author: `Javier Chacón`,
+    description: `Portfolio`,
+    author: `Javier Chacón <@JChaAlv>`,
   },
   plugins: [
+    `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     {

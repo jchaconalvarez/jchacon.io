@@ -5,11 +5,21 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
-import "./layout.css"
+import './layout.css'
+
+const AppContainer = styled.main`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
 
 export const Layout = ({ children }) => (
   <StaticQuery
@@ -23,16 +33,9 @@ export const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <main
-        style={{
-          width: `100%`,
-          height: `100vh`,
-          display: `flex`,
-          justifyContent: `center`,
-          alignItems: `center`
-        }}>
+      <AppContainer>
         {children}
-      </main>
+      </AppContainer>
     )}
   />
 )
