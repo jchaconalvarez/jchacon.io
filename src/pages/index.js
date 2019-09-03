@@ -1,20 +1,14 @@
 // Dependencies
 import React from 'react'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import { Title } from '../components/title/Title'
-
-// Global Styles
-import GlobalStyles from '../components/GlobalStyles'
+import { Layout, SEO } from '../components'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="" keywords={['gatsby', 'application', 'react']} />
+    <SEO title="" keywords={[`portfolio`, `web development`, `javier chacon`]} />
     <React.StrictMode>
-      <Title title="test" />
+      <h1>YOWASSUP</h1>
     </React.StrictMode>
-    <GlobalStyles />
   </Layout>
 )
 
