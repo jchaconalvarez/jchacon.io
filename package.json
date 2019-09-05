@@ -23,7 +23,8 @@
     "react-spring": "^8.0.19",
     "redux": "^4.0.1",
     "styled-components": "^4.2.0",
-    "typeface-noto-serif": "^0.0.72"
+    "typeface-noto-serif": "^0.0.72",
+    "typeface-ubuntu-mono": "^0.0.72"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
