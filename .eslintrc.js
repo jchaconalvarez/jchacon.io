@@ -18,6 +18,7 @@ module.exports = {
   },
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-boolean-value': [0],
     quotes: [1, 'single', { 'allowTemplateLiterals': true }],
     semi: ['error', 'never'],
     indent: ['error', 2],

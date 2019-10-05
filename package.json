@@ -25,6 +25,7 @@
     "redux": "^4.0.1",
     "styled-components": "^4.2.0",
     "typeface-noto-serif": "^0.0.72",
+    "typeface-raleway": "^0.0.75",
     "typeface-ubuntu-mono": "^0.0.72"
   },
   "devDependencies": {

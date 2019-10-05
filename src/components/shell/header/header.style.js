@@ -1,28 +1,16 @@
 import styled from 'styled-components'
-import TransitionLink from 'gatsby-plugin-transition-link'
 
 export const MainHeader = styled.header`
-  width: 100%;
-  padding-top: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  padding: 1em 1.5em;
 `
 
-export const Nav = styled.nav`
-  display: flex;
-  align-items: center;
-
-  h1 {
-    margin: 0 1em;
-  }
+export const Title = styled.h2`
+  margin: 0;
 `
 
-export const NavLink = styled(TransitionLink)`
-  text-decoration: none;
-  color: #101112;
-`
-
-export const Title = styled.div`
-  margin: 0 3em;
+export const SubTitle = styled.h3`
+  margin: 0 0 0 auto;
 `

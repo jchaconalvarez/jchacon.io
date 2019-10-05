@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { Landing, Layout, SEO } from '../components'
+import { Layout, SEO } from '../components'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="" keywords={['portfolio', 'web development', 'javier chacon']} />
     <React.StrictMode>
-      <Landing />
+      <h1>jchacon.io</h1>
     </React.StrictMode>
   </Layout>
 )
