@@ -6,6 +6,7 @@ import { VARIABLES } from '../../constants'
 export const Container = styled.div`
   max-width: 55%;
   margin-top: ${props => props.main && VARIABLES.scale.scale2}rem;
+
   padding: ${VARIABLES.scale['scale-1']}rem;
   position: relative;
   ${props => props.main ?

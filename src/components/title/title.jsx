@@ -7,10 +7,7 @@ export const Title = ({ title, number, main, before }) => {
   return (
     <Container main={main} before={before}>
       {main ?
-        <>
-          {/* <Number>{number}</Number> */}
-          <MainTitle number={number} pullSize={1}>{title}</MainTitle>
-        </> :
+        <MainTitle number={number} pullSize={1}>{title}</MainTitle> :
         <SectionTitle pullSize={1}>{title}</SectionTitle>
       }
     </Container>

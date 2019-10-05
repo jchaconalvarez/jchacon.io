@@ -11,8 +11,8 @@ export const Center = styled.div`
   margin-left: auto;
   margin-right: auto;
   ${props => props.padding && `
-    padding-left: ${props.padding};
-    padding-right: ${props.padding};
+    padding-left: ${props.padding * VARIABLES.scale.scale0}rem;
+    padding-right: ${props.padding * VARIABLES.scale.scale0}rem;
   `}
   ${props => props.text && 'text-align: center;'}
   ${props => props.flex && `
