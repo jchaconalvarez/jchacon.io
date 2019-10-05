@@ -7,7 +7,6 @@ export const Container = styled.div`
   max-width: 55%;
   margin-top: ${props => props.main && VARIABLES.scale.scale2}rem;
   padding: ${VARIABLES.scale['scale-1']}rem;
-  display: flex;
   position: relative;
   ${props => props.main ?
     ` margin-left: auto;
@@ -24,9 +23,9 @@ export const Container = styled.div`
 
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    border-bottom: 4px solid ${props => props.main ?
-    VARIABLES.colors.primary :
-    VARIABLES.colors.secondary};
+    border-bottom: ${VARIABLES.scale['scale-4']}rem solid ${props => props.main ?
+  VARIABLES.colors.primary :
+  VARIABLES.colors.secondary};
   }
 `
 
@@ -42,7 +41,7 @@ export const MainTitle = styled.h1`
     top: -${VARIABLES.scale.scale0}rem;
 
     font-size: ${props => props.number.length > 1 ?
-    `${VARIABLES.scale['scale3'] * 0.9}rem` :
+    `${VARIABLES.scale['scale3']}rem` :
     `${VARIABLES.scale['scale3']}rem`};
   }
 `
