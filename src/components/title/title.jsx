@@ -1,15 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { Container, MainTitle, SectionTitle } from './title.style'
+import { Container, MainTitle } from './title.style'
 
 export const Title = ({ title, number, main, before }) => {
   return (
-    <Container main={main} before={before}>
-      {main ?
-        <MainTitle number={number} pullSize={1}>{title}</MainTitle> :
-        <SectionTitle pullSize={1}>{title}</SectionTitle>
-      }
+    <Container main={main} before={before} pullSize={1}>
+      <MainTitle number={number}>{title}</MainTitle>
     </Container>
   )
 }

@@ -5,34 +5,47 @@ import { VARIABLES } from '../../constants'
 
 export const Container = styled.div`
   max-width: 55%;
-  margin-top: ${props => props.main && VARIABLES.scale.scale2}rem;
-
+  margin-top: ${VARIABLES.scale.scale2}rem;
+  margin-bottom: ${VARIABLES.scale.scale2}rem;
+  margin-left: auto;
   padding: ${VARIABLES.scale['scale-1']}rem;
   position: relative;
-  ${props => props.main ?
-    ` margin-left: auto;
-      background: ${VARIABLES.colors.primary};` : `
-      margin-right: auto;
-      background: ${VARIABLES.colors.secondary};
-    `}
+  border-radius: 5px;
+  ${props => props.pullSize && `margin-right: -${VARIABLES.scale.scale0 * props.pullSize}rem;`}
+  background: ${VARIABLES.colors.primary};
 
   ::before {
     content: '${props => props.before && props.before}';
     position: absolute;
     top: -${VARIABLES.scale['scale-1']}rem;
     left: -${VARIABLES.scale.scale0 * 6.5}rem;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    border-bottom: ${VARIABLES.scale['scale-4']}rem solid ${props => props.main ?
-  VARIABLES.colors.primary :
-  VARIABLES.colors.secondary};
+    border-bottom: ${VARIABLES.scale['scale-4']}rem solid ${VARIABLES.colors.primary}};
+  }
+
+  @media screen and (max-width: 480px) {
+    & {
+      max-width: 90%;
+    }
+
+    ::before {
+      left: initial;
+      right: 4ch;
+      top: -2ch;
+
+      padding: 0.2rem;
+      font-size: 0.75rem;
+      background: ${VARIABLES.colors.secondary};
+
+      border-radius: 5px;
+      border-bottom: none;
+    }
   }
 `
 
 export const MainTitle = styled.h1`
   margin-bottom: 0;
-  font-weight: 800;
   margin-left: ${VARIABLES.scale.scale1}rem;
 
   ::before {
@@ -45,16 +58,12 @@ export const MainTitle = styled.h1`
     `${VARIABLES.scale['scale3']}rem` :
     `${VARIABLES.scale['scale3']}rem`};
   }
-`
 
-export const SectionTitle = styled.h2`
-  margin-left: auto;
-  ${props => props.pullSize && `margin-right: -${props.pullSize * VARIABLES.scale.scale0}rem;`}
-`
-
-export const Number = styled.span`
-  font-size: ${VARIABLES.scale.scale2}rem;
-  ${props => props.pullSize && `padding-left: ${props.pullSize * VARIABLES.scale.scale5}rem;`}
+  @media screen and (max-width: 480px) {
+    & {
+      font-size: ${VARIABLES.scale.scale1}rem;
+    }
+  }
 `
 
 MainTitle.propTypes = {
