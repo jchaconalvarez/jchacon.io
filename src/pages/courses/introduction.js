@@ -27,10 +27,9 @@ const Introduction = () => (
           </Stack>
         </Center>
       </Column>
-      <Column>
+      <Column noTitle>
         <Center>
           <Stack>
-            {/* <SectionTitle title="Objective" pullSize={2} reverse /> */}
             <p>
               The objective of this coding module is to learn the basics of <strong>web markup</strong> (HTML and CSS)
               and apply them in the creation of a simplified version of your portfolio as
