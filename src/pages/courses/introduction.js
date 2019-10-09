@@ -50,7 +50,7 @@ const Introduction = () => (
                 <p>All the information about HTML5 you will ever need.</p>
               </li>
               <li>
-                <ExternalLink href="http://www.html5doctor.com">HTML Doctor</ExternalLink>
+                <ExternalLink href="http://www.html5doctor.com">HTML5 Doctor</ExternalLink>
                 <p>Great resource for getting information about the different HTML elements.</p>
               </li>
               <li>
