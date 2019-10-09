@@ -39,7 +39,7 @@ const Introduction = () => (
               </li>
               <li>
                 <ExternalLink href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics#Anatomy_of_an_HTML_element">
-                  MDN: Anatomy of an HTML element.
+                  MDN: Anatomy of an HTML element
                 </ExternalLink>
                 <p>What does an HTML element look like? You can find out here.</p>
               </li>
