@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import {
   Center,
@@ -13,6 +14,11 @@ import {
 
 const Introduction = () => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>1. Introduction</title>
+      <link rel="canonical" href="https://www.jchacon.io" />
+    </Helmet>
     <Header />
     <Title before="Week 1" number="1" title="Introduction" main />
     <Column>
