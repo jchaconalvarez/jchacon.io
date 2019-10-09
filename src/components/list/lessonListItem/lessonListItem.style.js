@@ -16,9 +16,10 @@ export const Text = styled.span`
     left: -${VARIABLES.scale.scale0}rem;
     top: -${VARIABLES.scale.scale0}rem;
 
-    font-size: ${props => props.number.length > 1 ?
-    `${VARIABLES.scale['scale2']}rem` :
-    `${VARIABLES.scale['scale2'] * 1.1}rem`};
+    font-size: ${props =>
+    props.number && props.number.length > 1 ?
+      `${VARIABLES.scale['scale2']}rem` :
+      `${VARIABLES.scale['scale2'] * 1.1}rem`};
   }
 `
 export const Container = styled.div`
@@ -30,7 +31,8 @@ export const Container = styled.div`
   color: ${VARIABLES.colors.text};
   transition: transform 100ms ease-in-out;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     transform: scale(1.05);
     background: ${VARIABLES.colors.primaryLight};
   }

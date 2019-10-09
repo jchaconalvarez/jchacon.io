@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import { VARIABLES } from '../../../constants'
+
 export const MainHeader = styled.header`
   display: flex;
   justify-content: space-evenly;
@@ -9,7 +11,14 @@ export const MainHeader = styled.header`
 `
 
 export const Title = styled.h2`
+  color: ${VARIABLES.colors.text};
   margin: 0;
+  transition: all 250ms ease-in-out;
+  :hover,
+  :focus {
+    transform: scale(1.01);
+    color: ${VARIABLES.colors.primary};
+  }
 `
 
 export const SubTitle = styled.h3`

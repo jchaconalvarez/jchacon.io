@@ -1,2 +1,2 @@
-export * from './lessonList'
+export * from './list'
 export * from './lessonListItem'

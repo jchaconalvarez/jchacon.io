@@ -1,5 +1,6 @@
+export * from './externalLink'
 export * from './layout'
-export * from './lessonList'
+export * from './list'
 export * from './title'
 export * from './sectionTitle'
 export * from './seo'
