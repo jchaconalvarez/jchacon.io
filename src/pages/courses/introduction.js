@@ -82,6 +82,16 @@ const Introduction = () => (
                 </p>
               </li>
               <li>
+                <ExternalLink href="https://google.github.io/styleguide/htmlcssguide.html">
+                  Google HTML/CSS Style Guide
+                </ExternalLink>
+                <p>
+                  Not sure how to write HTML? Do attributes go in capital
+                  letters? Do I use double or single quotes? This is Google's
+                  very own code style guide for HTML/CSS.
+                </p>
+              </li>
+              <li>
                 <ExternalLink href="https://codepen.io/freeCodeCamp/full/zNqgVx">
                   EXE: Tribute page
                 </ExternalLink>
