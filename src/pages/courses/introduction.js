@@ -55,7 +55,7 @@ const Introduction = () => (
               </li>
               <li>
                 <ExternalLink href="https://codeburst.io/block-level-and-inline-elements-the-difference-between-div-and-span-2f8502c1f95b">
-                  Block-level and Inline elements: The Difference Between &lt;div&gt; and &lt;span&gt;.
+                  Block-level and Inline elements: The Difference Between &lt;div&gt; and &lt;span&gt;
                 </ExternalLink>
                 <p>What's the difference between a Block-level element and an Inline element?</p>
               </li>
