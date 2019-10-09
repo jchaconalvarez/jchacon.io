@@ -7,6 +7,7 @@ export const ExternalLink = styled.a.attrs({ target: '_blank' })`
   color: ${VARIABLES.colors.primary};
   font-weight: 800;
   font-family: 'Raleway', sans-serif;
+  font-size: ${VARIABLES.scale.scale1}rem;
 
   :hover,
   :focus,

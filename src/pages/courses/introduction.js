@@ -20,7 +20,7 @@ const Introduction = () => (
       <Stack>
         <SectionTitle title="Resources" pullSize={2} />
         <Center>
-          <List bullets>
+          <List>
             <Stack>
               <li>
                 <ExternalLink href="http://info.cern.ch/hypertext/WWW/TheProject.html">
