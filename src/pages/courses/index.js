@@ -10,8 +10,8 @@ const Courses = () => {
         <Stack recursive>
           <List marginTop>
             <LessonListItem before="Week 1" linkTo="/courses/introduction" number="1" text="Intro to HTML" />
-            {/* <LessonListItem linkTo="/courses/html" number="2" text="HTML" />
-            <LessonListItem linkTo="/courses/css" number="3" text="CSS" />
+            <LessonListItem linkTo="/courses/introToCSS" number="2" text="Intro to CSS" />
+            {/* <LessonListItem linkTo="/courses/css" number="3" text="CSS" />
             <LessonListItem before="Week 2" linkTo="/courses/flexbox" number="4" text="Flexbox" /> */}
             {/* <LessonListItem linkTo="/courses/responsive" number="5" text="Responsive Design" /> */}
             {/* <LessonListItem linkTo="/courses/portfolio" number="6" text="Portfolio" /> */}
