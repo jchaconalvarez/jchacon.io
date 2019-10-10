@@ -1,10 +1,16 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import { Center, Header, List, LessonListItem, Stack } from '../../components'
 
 const Courses = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Courses</title>
+        <link rel="canonical" href="https://www.jchacon.io" />
+      </Helmet>
       <Header />
       <Center maxWidth={33} padding={3}>
         <Stack recursive>

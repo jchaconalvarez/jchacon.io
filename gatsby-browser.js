@@ -5,6 +5,12 @@
  */
 
 // You can delete this file if you're not using it
-import 'typeface-noto-serif'
-import 'typeface-ubuntu-mono'
-import 'typeface-raleway'
+// import 'typeface-noto-serif'
+require('typeface-ubuntu-mono')
+require('typeface-raleway')
+
+exports.onClientEntry = () => {
+  window.addEventListener('load', () => {
+    document.body.className = document.body.className.replace(/\bno-js\b/, '')
+  })
+}

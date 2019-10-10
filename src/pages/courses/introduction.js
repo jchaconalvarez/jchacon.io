@@ -1,9 +1,15 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 import { Center, Column, ExternalLink, Header, List, SectionTitle, Stack, Title } from '../../components'
 
 const Introduction = () => (
   <div>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>1. Introduction</title>
+      <link rel="canonical" href="https://www.jchacon.io" />
+    </Helmet>
     <Header />
     <Title before="Week 1" number="1" title="Introduction" main />
     <Column>
@@ -13,7 +19,7 @@ const Introduction = () => (
           <p>
             In this introduction to HTML we covered HTML basics such as the <strong>DOM tree</strong>, how to write HTML
             elements, the difference between <strong>inline</strong> and <strong>block</strong> elements, and some basic
-            tags like &lt;p&gt; and &lt;h1&gt;.
+            tags like <strong>&lt;p&gt;</strong> and <strong>&lt;h1&gt;</strong>.
           </p>
         </Center>
       </Stack>
@@ -58,6 +64,15 @@ const Introduction = () => (
                   Block-level and Inline elements: The Difference Between &lt;div&gt; and &lt;span&gt;
                 </ExternalLink>
                 <p>What's the difference between a Block-level element and an Inline element?</p>
+              </li>
+              <li>
+                <ExternalLink href="https://google.github.io/styleguide/htmlcssguide.html">
+                  Google HTML/CSS Style Guide
+                </ExternalLink>
+                <p>
+                  Not sure how to write HTML? Do attributes go in capital letters? Do I use double or single quotes?
+                  This is Google's very own code style guide for HTML/CSS.
+                </p>
               </li>
               <li>
                 <ExternalLink href="https://codepen.io/freeCodeCamp/full/zNqgVx">EXE: Tribute page</ExternalLink>
