@@ -27,9 +27,9 @@ const Courses = () => {
               text="Intro to CSS"
             />
             <LessonListItem
-              linkTo="/courses/responsive"
+              linkTo="/courses/flexbox"
               number="3"
-              text="Responsive design"
+              text="Flexbox"
             />
             {/* <LessonListItem before="Week 2" linkTo="/courses/flexbox" number="4" text="Flexbox" />  */}
             {/* <LessonListItem linkTo="/courses/responsive" number="5" text="Responsive Design" /> */}
