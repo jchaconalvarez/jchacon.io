@@ -88,9 +88,11 @@ const Flexbox = () => (
               </li>
             </Stack>
           </List>
-          <Stack>
-            <SectionTitle title="Examples" pullSize={2} />
-            {/* <div> */}
+        </Center>
+        <Stack>
+          <SectionTitle title="Examples" pullSize={2} />
+          {/* <div> */}
+          <Center>
             <h3>flexbox.html</h3>
             <pre style={{ fontSize: '12px' }}>
               {`
@@ -190,8 +192,8 @@ const Flexbox = () => (
                 }
               `}
             </pre>
-          </Stack>
-        </Center>
+          </Center>
+        </Stack>
       </Stack>
     </Column>
   </div>
