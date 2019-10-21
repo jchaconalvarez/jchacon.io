@@ -15,33 +15,11 @@ const Courses = () => {
       <Center maxWidth={33} padding={3}>
         <Stack recursive>
           <List marginTop>
-            <LessonListItem
-              before="Week 1"
-              linkTo="/courses/introduction"
-              number="1"
-              text="Intro to HTML"
-            />
-            <LessonListItem
-              linkTo="/courses/introToCSS"
-              number="2"
-              text="Intro to CSS"
-            />
-            <LessonListItem
-              linkTo="/courses/flexbox"
-              number="3"
-              text="Flexbox"
-            />
-            <LessonListItem
-              before="Week 2"
-              linkTo="/courses/responsive"
-              number="4"
-              text="Responsive Design"
-            />
-            {/* <LessonListItem
-              linkTo="/courses/responsive"
-              number="5"
-              text="Responsive Design"
-            /> */}
+            <LessonListItem before="Week 1" linkTo="/courses/introduction" number="1" text="Intro to HTML" />
+            <LessonListItem linkTo="/courses/introToCSS" number="2" text="Intro to CSS" />
+            <LessonListItem linkTo="/courses/flexbox" number="3" text="Flexbox" />
+            <LessonListItem before="Week 2" linkTo="/courses/responsive" number="4" text="Responsive Design" />
+            <LessonListItem before="Week 3" linkTo="/courses/animation" number="5" text="CSS Animation" />
             {/* <LessonListItem linkTo="/courses/portfolio" number="6" text="Portfolio" /> */}
             {/* <LessonListItem before="Week 3" linkTo="/courses/portfolio" number="7" text="Portfolio" /> */}
             {/* <LessonListItem linkTo="/courses/portfolio" number="8" text="Portfolio" /> */}
