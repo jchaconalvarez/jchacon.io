@@ -11,7 +11,7 @@ const Responsive = () => (
         <SectionTitle title="Summary" pullSize={2} />
         <Center>
           <p>
-            In this lesson we learned all about <b>CSS Pseudoclasses</b> like <b>hover</b>, <b>active</b>, and{' '}
+            In this lesson we learned all about <b>CSS Pseudo-classes</b> like <b>hover</b>, <b>active</b>, and{' '}
             <b>focus</b>. We also saw how to animate things using <b>CSS Transitions</b> and <b>CSS Animations</b>.
           </p>
         </Center>
@@ -21,6 +21,12 @@ const Responsive = () => (
         <Center>
           <List>
             <Stack>
+              <li>
+                <ExternalLink href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+                  MDN: CSS Pseudo-classes
+                </ExternalLink>
+                <p>MDN Web Doc's page on CSS pseudo-classes.</p>
+              </li>
               <li>
                 <ExternalLink href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation">
                   MDN: CSS Animation
