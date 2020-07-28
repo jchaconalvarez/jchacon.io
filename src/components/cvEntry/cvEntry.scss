@@ -35,6 +35,8 @@
     font-family: var(--secondary-font-family);
     font-size: var(--font-size-xsmall);
     font-weight: 700;
+
+    line-height: var(--line-height-stack-element);
   }
 
   &__summary {
