@@ -1,5 +1,6 @@
 .hero {
-  height: calc(100vh - 264px);
+  min-height: calc(100vh - 264px);
+  min-height: -webkit-fill-available;
 
   padding-block-start: 144px;
 
