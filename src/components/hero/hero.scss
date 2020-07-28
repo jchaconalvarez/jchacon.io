@@ -1,9 +1,9 @@
 .hero {
   height: calc(100vh - 264px);
 
-  padding-top: 144px;
+  padding-block-start: 144px;
 
-  line-height: 35px;
+  line-height: var(--line-height-hero);
 
   background: var(--color-background-hero);
 }

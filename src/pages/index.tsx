@@ -16,6 +16,7 @@ const CV = [
       'ReactJS',
       'Redux',
       'Styled-Components',
+      'Jest',
       'Sass',
       'D3.js',
       'Storybook.js',

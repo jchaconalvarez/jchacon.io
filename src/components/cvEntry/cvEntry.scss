@@ -1,13 +1,17 @@
 .cv-entry {
   &__company {
+    margin: var(--s-1) 0 var(--s1) 0;
   }
 
   &__date {
     color: var(--color-font-highlight);
-    font-size: var(--date-font-size);
+    font-size: var(--font-size-xsmall);
   }
 
   &__role {
+  }
+
+  &__role-information {
   }
 
   &__stack {
@@ -28,12 +32,15 @@
     background: var(--yellow);
     border-radius: var(--border-radius-small);
 
-    font-family: var(--copy-font-family);
-    font-size: var(--date-font-size);
+    font-family: var(--secondary-font-family);
+    font-size: var(--font-size-xsmall);
     font-weight: 700;
   }
 
   &__summary {
-    font-family: var(--copy-font-family);
+    font-size: var(--font-size-small);
+    font-family: var(--secondary-font-family);
+
+    line-height: var(--line-height-body);
   }
 }

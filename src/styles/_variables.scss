@@ -19,11 +19,16 @@
   --color-font-outline-border: var(--purlwhite);
 
   /* Type */
-  --heading-font-family: 'Rubik Mono One', sans-serif;
-  --copy-font-family: 'Rubik', sans-serif;
+  --main-font-family: 'Rubik Mono One', sans-serif;
+  --secondary-font-family: 'Rubik', sans-serif;
 
-  --date-font-size: 12px;
-  --heading-font-size: 24px;
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+
+  --line-height-hero: 35px;
+  --line-height-body: 21px;
 
   /* Spacing */
   --s-3: 0.175rem;
