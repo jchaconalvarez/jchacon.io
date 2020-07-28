@@ -22,7 +22,7 @@ export const CVEntry: React.FC<CVEntryProps> = ({
     <article className={'cv-entry'}>
       <h4 className={'cv-entry__date'}>{date}</h4>
       <h3 className={'cv-entry__role'}>{role}</h3>
-      <h2 className={'cv-entry__company'}>{company}</h2>
+      <h2 className={'cv-entry__company outlined-font'}>{company}</h2>
       <ul className={'cv-entry__stack'}>
         {stack.map((stackElement, index) => (
           <li className={'cv-entry__stack-element'} key={index}>

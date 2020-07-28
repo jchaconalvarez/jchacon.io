@@ -9,7 +9,7 @@ import '../styles/index.scss'
 // TODO: Move to Constants/Markdown
 const CV = [
   {
-    company: 'GoldenSpearLLC',
+    company: 'GoldenSpear LLC',
     date: '2019-Present',
     role: 'Frontend Dev',
     stack: [

@@ -13,6 +13,9 @@ export const Hero: React.FC = () => {
             <span className={'hero__position-old'}>English teacher</span> turned{' '}
             <span className={'hero__position-new'}>web developer.</span>
           </h2>
+          <h2 className={'outlined-font'}>
+            Tech nerd with a knack for problem solving
+          </h2>
         </div>
       </div>
     </div>

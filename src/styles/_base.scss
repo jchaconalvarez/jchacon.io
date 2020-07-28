@@ -1,6 +1,9 @@
 html {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: var(--heading-font-family);
 }
+
+// Typography
+//////////
 
 h1,
 h2,
@@ -20,4 +23,45 @@ h4 {
 
 h1 {
   margin-top: 0;
+}
+
+.outlined-font {
+  color: var(--color-font-outline);
+  text-shadow: -1px -1px 0 var(--color-font-outline-border),
+    1px -1px 0 var(--color-font-outline-border),
+    -1px 1px 0 var(--color-font-outline-border),
+    1px 1px 0 var(--color-font-outline-border);
+}
+
+// Typography end
+//////////
+
+// Lists
+//////////
+
+ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  display: inline-block;
+}
+
+// Layout
+//////////
+.main {
+  padding-block-start: var(--s4);
+
+  background: var(--color-background-main);
+}
+
+.container {
+  padding: var(--s1);
+
+  & > * + * {
+    margin-top: 80px;
+  }
 }

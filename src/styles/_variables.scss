@@ -1,4 +1,7 @@
 :root {
+  // Boxes
+  --border-radius-small: 2px;
+
   /* Colors */
   --black: #090909;
   --blue: #0500ff;
@@ -19,15 +22,16 @@
   --heading-font-family: 'Rubik Mono One', sans-serif;
   --copy-font-family: 'Rubik', sans-serif;
 
+  --date-font-size: 12px;
   --heading-font-size: 24px;
 
   /* Spacing */
-  --s-3: 2px;
-  --s-2: 4px;
-  --s-1: 8px;
-  --s0: 16px;
-  --s1: 24px;
-  --s2: 32px;
-  --s3: 48px;
-  --s4: 64px;
+  --s-3: 0.175rem;
+  --s-2: 0.25rem;
+  --s-1: 0.5rem;
+  --s0: 1rem;
+  --s1: 1.5rem;
+  --s2: 2rem;
+  --s3: 3rem;
+  --s4: 4rem;
 }

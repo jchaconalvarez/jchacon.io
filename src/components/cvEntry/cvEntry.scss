@@ -1,0 +1,39 @@
+.cv-entry {
+  &__company {
+  }
+
+  &__date {
+    color: var(--color-font-highlight);
+    font-size: var(--date-font-size);
+  }
+
+  &__role {
+  }
+
+  &__stack {
+    // Compensating for .cv-entry__stack-element margin-top.
+    margin-top: calc(var(--s0) * -1);
+
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__stack-element {
+    padding: var(--s-2) var(--s-1);
+    margin: var(--s0) var(--s-1) 0 0;
+
+    color: var(--blue);
+    background: var(--yellow);
+    border-radius: var(--border-radius-small);
+
+    font-family: var(--copy-font-family);
+    font-size: var(--date-font-size);
+    font-weight: 700;
+  }
+
+  &__summary {
+    font-family: var(--copy-font-family);
+  }
+}
