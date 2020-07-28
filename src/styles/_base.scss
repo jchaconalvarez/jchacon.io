@@ -1,0 +1,66 @@
+html {
+  font-family: var(--main-font-family);
+}
+
+// Typography
+//////////
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  color: var(--color-font-main);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-block-start: 0;
+  margin-block-end: var(--s0);
+  font-size: var(--font-size-large);
+}
+
+.outlined-font {
+  color: var(--color-font-outline);
+  text-shadow: -1px -1px 0 var(--color-font-outline-border),
+    1px -1px 0 var(--color-font-outline-border),
+    -1px 1px 0 var(--color-font-outline-border),
+    1px 1px 0 var(--color-font-outline-border);
+}
+
+// Typography end
+//////////
+
+// Lists
+//////////
+
+ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  display: inline-block;
+}
+
+// Layout
+//////////
+
+.main {
+  padding-block-start: 120px;
+
+  background: var(--color-background-main);
+}
+
+.container {
+  padding: var(--s1);
+
+  & > * + * {
+    margin-block-start: 80px;
+  }
+}

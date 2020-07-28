@@ -1,0 +1,43 @@
+:root {
+  // Boxes
+  --border-radius-small: 2px;
+
+  /* Colors */
+  --black: #090909;
+  --blue: #0500ff;
+  --yellow: #ffec00;
+  --purlwhite: #e1daff;
+
+  /* Intentions */
+  --color-background-hero: var(--black);
+  --color-background-main: var(--blue);
+  --color-font-main: var(--purlwhite);
+
+  --color-font-highlight: var(--yellow);
+
+  --color-font-outline: var(--blue);
+  --color-font-outline-border: var(--purlwhite);
+
+  /* Type */
+  --main-font-family: 'Rubik Mono One', sans-serif;
+  --secondary-font-family: 'Rubik', sans-serif;
+
+  --font-size-xsmall: 0.75rem;
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.5rem;
+
+  --line-height-hero: 35px;
+  --line-height-body: 21px;
+  --line-height-stack-element: 18px;
+
+  /* Spacing */
+  --s-3: 0.175rem;
+  --s-2: 0.25rem;
+  --s-1: 0.5rem;
+  --s0: 1rem;
+  --s1: 1.5rem;
+  --s2: 2rem;
+  --s3: 3rem;
+  --s4: 4rem;
+}
