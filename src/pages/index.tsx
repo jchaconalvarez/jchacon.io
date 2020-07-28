@@ -1,10 +1,64 @@
 import React from 'react'
 
 // Components
-import { Hero } from '../components'
+import { CVEntry, Hero } from '../components'
 
 // Styles
 import '../styles/index.scss'
+
+// TODO: Move to Constants/Markdown
+const CV = [
+  {
+    company: 'GoldenSpearLLC',
+    date: '2019-Present',
+    role: 'Frontend Dev',
+    stack: [
+      'ReactJS',
+      'Redux',
+      'Styled-Components',
+      'Sass',
+      'D3.js',
+      'Storybook.js',
+      'Scrum',
+      'CI',
+    ],
+    summary:
+      'Member of the Frontend team tasked with developing interfaces for multiple AI-driven data analytics and business intelligence platforms.',
+  },
+  {
+    company: 'Ironhack',
+    date: '2019/2020',
+    role: 'Lead Teacher',
+    stack: ['HTML', 'CSS', 'Teaching'],
+    summary:
+      'HTML and CSS teacher for UX/UI Bootcamp students for both in person and online courses. Responsibilities include the design and preparation of classes as well as providing feedback and correction to students.',
+  },
+  {
+    company: 'Profile Software Services',
+    date: '2019',
+    role: 'Frontend Dev',
+    stack: [
+      'Angular2+',
+      'AngularJS',
+      'Sass',
+      'Jasmine',
+      'Scrum',
+      'TDD',
+      'CI',
+      'CD',
+    ],
+    summary:
+      'Part of multi-disciplinary team in charge of developing and maintaining complex Angular2+ web apps for large companies such as Sanitas, Avon, and RAC.',
+  },
+  {
+    company: 'Ironhack',
+    date: '2019',
+    role: 'Assistant Teacher',
+    stack: ['HTML', 'CSS', 'Teaching'],
+    summary:
+      'Assisted Lead Teacher by correcting student exercises and providing feedback to students.',
+  },
+]
 
 const IndexPage: React.FC = () => {
   return (
@@ -12,29 +66,9 @@ const IndexPage: React.FC = () => {
       <Hero />
       <main className={'main'}>
         <div className={'container'}>
-          <article className={'cv-entry'}>
-            <h4 className={'cv-entry__date'}>2019/Present</h4>
-            <h3 className={'cv-entry__position'}>Lead teacher</h3>
-            <h2 className={'cv-entry__place'}>Ironhack</h2>
-            <ul className={'cv-entry__tech-list'}>
-              <li className={'cv-entry__tags'}>React</li>
-              <li className={'cv-entry__tags'}>Redux</li>
-              <li className={'cv-entry__tags'}>Styled-Components</li>
-              <li className={'cv-entry__tags'}>Sass</li>
-              <li className={'cv-entry__tags'}>D3.js</li>
-              <li className={'cv-entry__tags'}>Storybook</li>
-              <li className={'cv-entry__tags'}>Scrum</li>
-              <li className={'cv-entry__tags'}>CI</li>
-            </ul>
-            <p>
-              Member of the Frontend team tasked with development interfaces for
-              multiple AI-driven data analytics and business intelligence
-              projects.
-            </p>
-          </article>
-          <article className={'cv-entry'}></article>
-          <article className={'cv-entry'}></article>
-          <article className={'cv-entry'}></article>
+          {CV.map((cvEntry, index) => (
+            <CVEntry key={index} {...cvEntry} />
+          ))}
         </div>
       </main>
     </>

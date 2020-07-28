@@ -1,11 +1,12 @@
 .hero {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 264px);
+
+  padding-top: 144px;
 
   background: var(--color-background-hero);
 }
 
 .hero__name {
-  letter-spacing: 0px;
   color: var(--blue);
 }
 
