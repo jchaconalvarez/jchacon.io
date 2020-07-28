@@ -10,8 +10,8 @@ export const Hero: React.FC = () => {
         <div className={'hero__copy'}>
           <h1 className={'hero__name'}>Javier Chacón</h1>
           <h2>
-            <span className={'hero__position-old'}>English teacher</span> turned{' '}
-            <span className={'hero__position-new'}>web developer.</span>
+            <span className={'hero__role-old'}>English teacher</span> turned{' '}
+            <span className={'hero__role-new'}>web developer.</span>
           </h2>
           <h2 className={'outlined-font'}>
             Tech nerd with a knack for problem solving
