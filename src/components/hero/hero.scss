@@ -1,0 +1,18 @@
+.hero {
+  height: calc(100vh - 120px);
+
+  background: var(--color-background-hero);
+}
+
+.hero__name {
+  letter-spacing: 0px;
+  color: var(--blue);
+}
+
+.hero__position-old {
+  text-decoration: line-through;
+}
+
+.hero__position-new {
+  background: var(--blue);
+}

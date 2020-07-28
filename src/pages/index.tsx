@@ -1,18 +1,15 @@
 import React from 'react'
 
-/* Styles */
+// Components
+import { Hero } from '../components'
+
+// Styles
 import '../styles/index.scss'
 
 const IndexPage: React.FC = () => {
   return (
     <>
-      <div className={'hero'}>
-        <h1 className={'hero__name'}>Javier Chacón</h1>
-        <h2 className={'hero__copy'}>
-          <span className={'hero__position-old'}>English teacher turned</span>{' '}
-          <span className={'hero__position-new'}>web developer.</span>
-        </h2>
-      </div>
+      <Hero />
       <main className={'main'}>
         <div className={'container'}>
           <article className={'cv-entry'}>
