@@ -52,13 +52,14 @@ li {
 //////////
 
 .main {
-  padding-block-start: 120px;
+  padding-block-start: var(--s4);
+  padding-block-end: var(--s4);
 
   background: var(--color-background-main);
 }
 
 .container {
-  padding: var(--s1);
+  padding: 0 var(--s1);
 
   & > * + * {
     margin-block-start: 80px;
