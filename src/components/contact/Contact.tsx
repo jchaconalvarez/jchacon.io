@@ -22,11 +22,13 @@ export const Contact: React.FC = () => {
         data-netlify={true}
         method={'POST'}
         name={'contact'}
+        netlify-honeypot="bot-field"
       >
+        //* Netlify form integration
+        <input type={'hidden'} name={'form-name'} value={'contact'} />
         <FormField labelText={'Name'} type={'text'} />
         <FormField labelText={'Email'} type={'email'} />
         <FormField isTextarea={true} labelText={'Message'} type={'textarea'} />
-
         <button type={'submit'}>Send</button>
       </form>
 
