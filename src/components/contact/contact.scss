@@ -1,0 +1,22 @@
+.contact {
+  background: var(--color-background-secondary);
+
+  &__title {
+    margin-block-end: var(--s0);
+  }
+
+  &__form {
+    margin-block-end: var(--s2);
+  }
+
+  &__social {
+    * + * {
+      margin-inline-start: var(--s2);
+    }
+  }
+
+  &__social-icon:hover,
+  &__social-icon:focus {
+    fill: var(--yellow);
+  }
+}

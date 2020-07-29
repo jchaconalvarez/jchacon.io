@@ -10,7 +10,8 @@ h2,
 h3,
 h4,
 p,
-span {
+span,
+label {
   color: var(--color-font-main);
 }
 
@@ -25,14 +26,50 @@ h4 {
 
 .outlined-font {
   color: var(--color-font-outline);
-  text-shadow: -1px -1px 0 var(--color-font-outline-border),
-    1px -1px 0 var(--color-font-outline-border),
-    -1px 1px 0 var(--color-font-outline-border),
-    1px 1px 0 var(--color-font-outline-border);
+  text-shadow: -2px -2px 0 var(--color-font-outline-border),
+    2px -2px 0 var(--color-font-outline-border),
+    -2px 2px 0 var(--color-font-outline-border),
+    2px 2px 0 var(--color-font-outline-border);
+}
+
+.outline-secondary {
+  color: var(--color-font-outline-secondary);
 }
 
 // Typography end
 //////////
+
+// Forms
+//////////
+
+form {
+  * + * {
+    margin-block-start: var(--s1);
+  }
+}
+
+label {
+  display: block;
+
+  font-size: var(--font-size-small);
+}
+
+input,
+textarea {
+  margin-block-start: var(--s-1);
+  padding: var(--s-1) var(--s-2);
+
+  background: transparent;
+  border: 1px solid var(--color-font-main);
+
+  color: var(--color-font-main);
+  font-size: var(--font-size-small);
+
+  &:focus {
+    outline: none;
+    border-color: var(--yellow);
+  }
+}
 
 // Lists
 //////////
@@ -51,16 +88,27 @@ li {
 // Layout
 //////////
 
-.main {
+.container {
+  padding-inline-start: var(--s1);
+  padding-inline-end: var(--s1);
+}
+
+.section {
   padding-block-start: var(--s4);
   padding-block-end: var(--s4);
+}
 
+.main {
   background: var(--color-background-main);
 }
 
-.container {
-  padding: 0 var(--s1);
+.flow {
+  & > * + * {
+    margin-block-start: var(--s0);
+  }
+}
 
+.cv-flow {
   & > * + * {
     margin-block-start: 80px;
   }

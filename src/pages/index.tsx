@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Components
-import { CVEntry, Hero } from '../components'
+import { Contact, CVEntry, Hero } from '../components'
 
 // Styles
 import '../styles/index.scss'
@@ -65,13 +65,12 @@ const IndexPage: React.FC = () => {
   return (
     <>
       <Hero />
-      <main className={'main'}>
-        <div className={'container'}>
-          {CV.map((cvEntry, index) => (
-            <CVEntry key={index} {...cvEntry} />
-          ))}
-        </div>
+      <main className={'main container section cv-flow'}>
+        {CV.map((cvEntry, index) => (
+          <CVEntry key={index} {...cvEntry} />
+        ))}
       </main>
+      <Contact />
     </>
   )
 }
