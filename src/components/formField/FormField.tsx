@@ -6,21 +6,23 @@ import './formField.scss'
 type FormFieldProps = {
   isTextarea?: boolean
   labelText?: string
+  name: string
   type: string
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
   isTextarea = false,
   labelText,
+  name,
   type,
 }) => {
   return (
     <div className={'form-field'}>
       {labelText && <label className={'form-field__label'}>{labelText}</label>}
       {type === 'textarea' ? (
-        <textarea className={'form-field__input'} />
+        <textarea className={'form-field__input'} name={name} />
       ) : (
-        <input className={'form-field__input'} type={type} />
+        <input className={'form-field__input'} name={name} type={type} />
       )}
     </div>
   )
