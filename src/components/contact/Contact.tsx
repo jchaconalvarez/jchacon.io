@@ -17,11 +17,19 @@ export const Contact: React.FC = () => {
       <h3 className={'contact__title outlined-font outline-secondary'}>
         Contact
       </h3>
-      <form className={'contact__form'}>
+      <form
+        className={'contact__form'}
+        data-netlify={true}
+        method={'POST'}
+        name={'contact'}
+      >
         <FormField labelText={'Name'} type={'text'} />
         <FormField labelText={'Email'} type={'email'} />
         <FormField isTextarea={true} labelText={'Message'} type={'textarea'} />
+
+        <button type={'submit'}>Send</button>
       </form>
+
       <article className={'contact__social'}>
         <a href={'https://www.github.com/jchaconalvarez'} target={'_blank'}>
           <img className={'contact__social-icon'} src={gh} alt={'GitHub'} />
