@@ -56,6 +56,8 @@ label {
 
 input,
 textarea {
+  width: 100%;
+
   margin-block-start: var(--s-1);
   padding: var(--s-1) var(--s-2);
 
@@ -72,12 +74,16 @@ textarea {
 }
 
 button {
-  padding: var(--s-1) var(--s0);
+  width: 100%;
 
+  padding: var(--s0) var(--s1);
+
+  background: var(--color-background-main);
   border: none;
   border-radius: 3px;
 
-  background: var(--color-font-main);
+  color: var(--color-font-main);
+  font-size: var(--font-size-small);
 }
 
 // Lists

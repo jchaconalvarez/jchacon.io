@@ -17,6 +17,8 @@
 
   &__social-icon:hover,
   &__social-icon:focus {
-    fill: var(--yellow);
+    path {
+      fill: var(--yellow);
+    }
   }
 }

@@ -34,18 +34,15 @@ export const Contact: React.FC = () => {
 
       <article className={'contact__social'}>
         <a href={'https://www.github.com/jchaconalvarez'} target={'_blank'}>
-          {/* <img className={'contact__social-icon'} src={gh} alt={'GitHub'} /> */}
           <GitHub className={'contact__social-icon'} />
         </a>
         <a
           href={'https://www.linkedin.com/in/jchaconalvarez/'}
           target={'_blank'}
         >
-          {/* <img className={'contact__social-icon'} src={ln} alt={'LinkedIn'} /> */}
           <LinkedIn className={'contact__social-icon'} />
         </a>
         <a href={'https://www.twitter.com/chacon_jav'} target={'_blank'}>
-          {/* <img className={'contact__social-icon'} src={tw} alt={'Twitter'} /> */}
           <Twitter className={'contact__social-icon'} />
         </a>
       </article>
