@@ -28,12 +28,7 @@ export const Contact: React.FC = () => {
         <input type={'hidden'} name={'form-name'} value={'contact'} />
         <FormField labelText={'Name'} name={'name'} type={'text'} />
         <FormField labelText={'Email'} name={'email'} type={'email'} />
-        <FormField
-          isTextarea={true}
-          labelText={'Message'}
-          name={'message'}
-          type={'textarea'}
-        />
+        <FormField labelText={'Message'} name={'message'} type={'textarea'} />
         <button type={'submit'}>Send</button>
       </form>
 
