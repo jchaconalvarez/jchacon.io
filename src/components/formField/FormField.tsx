@@ -4,14 +4,12 @@ import React from 'react'
 import './formField.scss'
 
 type FormFieldProps = {
-  isTextarea?: boolean
   labelText?: string
   name: string
   type: string
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
-  isTextarea = false,
   labelText,
   name,
   type,
