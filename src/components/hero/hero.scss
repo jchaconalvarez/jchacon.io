@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 264px);
+  height: calc(100vh - 120px);
   min-height: -webkit-fill-available;
 
   padding-block-start: 144px;
@@ -9,8 +9,15 @@
   background: var(--color-background-secondary);
 }
 
+.hero__name,
+.hero__role-new {
+  background: var(--color-background-main);
+}
+
 .hero__name {
-  color: var(--blue);
+  display: inline-block;
+
+  padding-inline-end: var(--s-2);
 }
 
 .hero__role-old {
@@ -19,5 +26,4 @@
 
 .hero__role-new {
   padding: var(--s-2) 0;
-  background: var(--blue);
 }
