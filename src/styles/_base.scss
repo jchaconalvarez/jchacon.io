@@ -70,11 +70,17 @@ textarea {
 
   color: var(--color-font-main);
   font-size: var(--font-size-small);
+  caret-color: var(--color-font-highlight);
 
   &:focus {
     outline: none;
     border-color: var(--yellow);
   }
+}
+
+textarea {
+  height: 5rem;
+  resize: none;
 }
 
 button {
